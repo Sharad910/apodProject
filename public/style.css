@@ -28,6 +28,7 @@ body{
 #aboutImg{
     width: 50%;
     text-align: justify;
+    margin-left: 15px;
 }
 img{
     height:400px;
