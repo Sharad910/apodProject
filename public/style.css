@@ -1,0 +1,69 @@
+body{
+    background-color: rgb(207, 212, 212);
+}
+#container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+
+#buttonContainer{
+    display: flex;
+    flex-direction: row;
+    width: 90%;
+    height: 100px;
+    justify-content: space-between;
+}
+
+#Content{
+    display: flex;
+    flex-direction: row;
+}
+#Image{
+    width: 50%;
+}
+
+#aboutImg{
+    width: 50%;
+    text-align: justify;
+}
+img{
+    height:400px;
+    width:90%;
+}
+
+#heading{
+    display:flex;
+    width: 95vw;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#exp{
+    width: 95%;
+}
+
+hr{
+    width: 90%;
+}
+
+h1{
+    margin-bottom: 0;
+}
+
+h2{
+    text-align: center;
+}
+
+button {
+    background-color: aliceblue;
+    transition-duration: 0.4s;
+}
+  
+button:hover {
+    background-color: #4CAF50; /* Green */
+    color: white;
+}
