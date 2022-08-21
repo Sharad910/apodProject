@@ -14,7 +14,9 @@ function App() {
   const[Title,setTitle]=useState("");
   const[Date,setDate]=useState("");
   const[mediaType,setMediaType]=useState("image");
-  const[DisplayDate,changeDate]=useState(test.toLocaleDateString("fr-CA",{timeZone:"UTC"}).slice(0,10))
+  const[DisplayDate,changeDate]=useState(test.toLocaleDateString("fr-CA",{timeZone:"UTC"}).slice(0,10));
+
+  const[show,setShow]=useState(false);
 
   function prevDay(){
     test.setDate(test.getDate()-1);
@@ -33,7 +35,7 @@ useEffect(()=>{
       setTitle(data.title);
       setDate(data.date);
       setMediaType(data.media_type);
-      // console.log(date);
+      setShow(true);
     });
   
 },[DisplayDate]);
@@ -49,7 +51,7 @@ function checkMedia(){
     return"Could not fetch the image,the reasons can be: image doesn't exist at the source";
   }
 }
-  return (
+  return (show?
     <div id="container">
     <Heading date={Date}/>
     <div id="Content">
@@ -65,7 +67,7 @@ function checkMedia(){
     
     </div>
     </div>
-    </div>
+    </div>:<p>Loading...</p>
   );
 }
 
