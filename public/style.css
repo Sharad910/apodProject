@@ -1,5 +1,6 @@
 body{
-    background-color: rgb(207, 212, 212);
+    background-color: rgb(40,40,40);
+    color:white;
 }
 #container{
     display: flex;
